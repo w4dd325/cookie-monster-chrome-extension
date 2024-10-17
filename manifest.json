@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Monster",
+  "version": "1.0",
+  "description": "A private Chrome extension to add a session-only cookie.",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "500": "icon.png"
+    }
+  },
+  "icons": {
+    "500": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

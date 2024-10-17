@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie Monster</title>
+  <style>
+    /* Inline CSS to style the popup width and center content */
+    body {
+      width: 200px; /* Set the desired width for the popup */
+      margin: 0;
+      padding: 5px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #logo {
+      width: 190px; /* Adjust the logo width as needed */
+      margin-bottom: 5px; /* Add some space below the logo */
+    }
+
+    .add-cookie {
+      width: 190px;
+      padding: 8px 16px;
+      font-size: 14px;
+      margin-bottom: 5px; 
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Add a logo image at the top -->
+  <img id="logo" src="cookie-monster.png" alt="Cookie Adder Logo">
+  <button id="add-dev-cookie" class="add-cookie">Add The DEV Cookie</button>
+  <button id="add-stg-cookie" class="add-cookie">Add The STG Cookie</button>
+  <!-- Ensure the script is at the end of the body -->
+  <script src="popup.js"></script>
+</body>
+</html>
